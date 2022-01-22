@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
     const {id} = useParams();
-    const{ data:blog , error , isPending} = useFetch( 'http://localhost:8000/blogs/' +id);
+    const{ data:blog , error , isPending} = useFetch( 'https://my-json-server.typicode.com/kavindu9611/myBlogDB' +id);
     const history = useHistory();
 
     const handleClick = ()=>{
